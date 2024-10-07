@@ -1,0 +1,19 @@
+[versions]
+agp = "8.7.0"
+kotlin = "2.0.20"
+rikka-refine = "4.4.0"
+annotation = "1.8.2"
+commons-cli = "1.5.0"
+
+[libraries]
+rikka-refine-annotation = { module = "dev.rikka.tools.refine:annotation", version.ref = "rikka-refine" }
+rikka-refine-annotation-processor = { module = "dev.rikka.tools.refine:annotation-processor", version.ref = "rikka-refine" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+commons-cli = { module = "commons-cli:commons-cli", version.ref = "commons-cli" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+rikka-refine = { id = "dev.rikka.tools.refine", version.ref = "rikka-refine" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+

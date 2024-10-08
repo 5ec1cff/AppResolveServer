@@ -38,6 +38,7 @@ dependencies {
     compileOnly(libs.annotation)
     compileOnly(project(":stub"))
     implementation(libs.commons.cli)
+    implementation(libs.gson)
 }
 
 afterEvaluate {

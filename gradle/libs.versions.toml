@@ -1,11 +1,13 @@
 [versions]
 agp = "8.7.0"
+gson = "2.11.0"
 kotlin = "2.0.20"
 rikka-refine = "4.4.0"
 annotation = "1.8.2"
 commons-cli = "1.5.0"
 
 [libraries]
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 rikka-refine-annotation = { module = "dev.rikka.tools.refine:annotation", version.ref = "rikka-refine" }
 rikka-refine-annotation-processor = { module = "dev.rikka.tools.refine:annotation-processor", version.ref = "rikka-refine" }
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }

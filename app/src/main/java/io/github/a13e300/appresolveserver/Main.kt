@@ -56,7 +56,7 @@ data class PackageItem(
     val label: String?,
     val icon: String?, // icon data url
     val appId: Int, // uid % 100000
-    val lastUpdate: Long
+    val lastUpdate: String
 )
 
 data class UserItem(
@@ -181,7 +181,7 @@ fun handleClient(socket: LocalSocket) = socket.use {
                     label,
                     icon,
                     ai.uid % 100000,
-                    pi.lastUpdateTime
+                    pi.lastUpdateTime.toString()
                 )
             )
         }
